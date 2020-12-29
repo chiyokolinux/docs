@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>CBSH(1)</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">CBSH(1)</h1>
+<p class="date">December 2020</p>
+</header>
+<h2 id="name">NAME</h2>
+<p>cbsh - chiyoko chibi shell</p>
+<h2 id="synopsis">SYNOPSIS</h2>
+<p><strong>cbsh</strong> [<strong>OPTIONS</strong>]</p>
+<h2 id="description">DESCRIPTION</h2>
+<p><em>cbsh</em> is a simple command language interpreter usable as an interactive shell, written in C. It is meant to precede kaigara(1). It includes a command-line editor, basic file-based word hinting and completion and a command history.</p>
+<h2 id="options">OPTIONS</h2>
+<ul>
+<li>-m, –multiline<br />
+Use multiline editing (“soft-wrap”) instead of single line editing.</li>
+<li>-H, –no-history<br />
+Do not load or save the history file</li>
+<li>-v, –version<br />
+Print version and exit</li>
+</ul>
+<h2 id="configuration">CONFIGURATION</h2>
+<p>Pre-compile time configuration can be done in the <code>config.h</code> file.</p>
+<p><strong>MAXCURDIRLEN</strong><br />
+The maximum length of the current path name. 4096 by default.<br />
+<strong>DEFAULTPROMPT</strong><br />
+The default prompt printf(3) format string. <code>%1$s</code> will be replaced with the current user’s username, <code>%2$s</code> will be replaced with the system’s hostname and <code>%3$s</code> will be replaced with the current path.<br />
+<strong>HISTSIZE</strong><br />
+The maximum length of the command history and command history file.</p>
+<h2 id="files">FILES</h2>
+<p><em>cbsh</em> will read the history from previous sessions from <code>~/.cbsh_history</code> and will (and thus overwrite) this file on exit. If the location of <code>~</code> cannot be determined, no history will be loaded. If <code>~/.cbsh_history</code> does not exist on exit, the file will be created and filled with the history of the exited session.</p>
+<h2 id="evironment-variables">EVIRONMENT VARIABLES</h2>
+<p><strong>USER</strong><br />
+The username displayed in the prompt. If not set, emily will be used.<br />
+<strong>HOSTNAME</strong><br />
+The hostname displayed in the prompt. If not set, chiyoko will be used.<br />
+<strong>HOME</strong><br />
+The current user’s home directory and startup directory. If not set, history will be disabled and / will be used.<br />
+<strong>PS1</strong><br />
+The prompt printf(3) format string to use. If not set, <strong>DEFAULTPROMPT</strong> from <code>config.h</code> will be used.</p>
+<h2 id="bugs">BUGS</h2>
+<p>To report bugs, see https://github.com/chiyokolinux/cbsh/issues .</p>
+<h2 id="author">AUTHOR</h2>
+<p>Written by Emily Lucy Ishikawa, &lt; elishikawa@jagudev.net &gt;.</p>
+</body>
+</html>
