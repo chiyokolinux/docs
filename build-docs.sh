@@ -2,7 +2,7 @@
 
 buildhtml() {
     echo "Building html doc $1 in $2/..."
-    pandoc -f markdown -t html -s -c "style.css" $2/$1.md -o $2/$1.html
+    pandoc -f markdown -t html -s $2/$1.md -o $2/$1.html
 }
 
 buildman() {
