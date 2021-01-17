@@ -1,6 +1,6 @@
 ---
 title: CBSH(1)
-date: December 2020
+date: January 2021
 footer: cbsh-1.0
 ---
 
@@ -44,7 +44,7 @@ Pre-compile time configuration can be done in the `config.h` file.
 FILES
 -----
 
-*cbsh* will read the history from previous sessions from `~/.cbsh_history` and will (and thus overwrite) this file on exit.
+*cbsh* will read the history from previous sessions from `~/.cbsh_history` and will save (and thus overwrite) this file on exit.
 If the location of `~` cannot be determined, no history will be loaded.
 If `~/.cbsh_history` does not exist on exit, the file will be created and filled with the history of the exited session.
 
