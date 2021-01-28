@@ -12,6 +12,7 @@ buildman() {
 }
 
 buildman cbsh.1 cbsh
+buildman nezumi.1 nezumi
 
 # fix man pages
 # sed -i 's/.TH "CBSH(1)" "" "" "" ""/.TH "CBSH" "1" "cbsh-1.0" "December 2020" ""/' cbsh/cbsh.1
