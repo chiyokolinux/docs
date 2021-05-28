@@ -25,6 +25,11 @@ OPTIONS
 * URL
   The URL to open at startup. Defaults to `gopher://gopher.floodgap.com/`
 
+KEYBINDS
+--------
+
+Use the arrow keys to navigate. Press o to open a URL. Press space, enter or f to follow the link on the current line. b and p go backward in the history, n and F go forward in the history. r reloads the current page. d creates a bookmark for the current page and D lists all bookmarks. Press ^G twice and then enter to discard the current input.
+
 CONFIGURATION
 -------------
 
@@ -40,6 +45,14 @@ EVIRONMENT VARIABLES
 
 **BROWSER**  
     The program to use for opening hyperlinks and telnet sessions. If not set, xdg-open will be used.  
+**HOME**  
+    The path to the user's home directory. Used to determine the bookmark file path.
+
+FILES
+-----
+
+**~/.config/nezumi-bookmarks**  
+    This file stores all bookmarks.
 
 BUGS
 ----
