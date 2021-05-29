@@ -1,6 +1,6 @@
 ---
 title: NEZUMI(1)
-date: January 2021
+date: May 2021
 footer: nezumi-1.0
 ---
 

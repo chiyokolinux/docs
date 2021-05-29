@@ -151,7 +151,7 @@
 <body>
 <header id="title-block-header">
 <h1 class="title">NEZUMI(1)</h1>
-<p class="date">January 2021</p>
+<p class="date">May 2021</p>
 </header>
 <h2 id="name">NAME</h2>
 <p>nezumi - a simple browser for the internet gopher protocol</p>
@@ -163,6 +163,8 @@
 <ul>
 <li>URL The URL to open at startup. Defaults to <code>gopher://gopher.floodgap.com/</code></li>
 </ul>
+<h2 id="keybinds">KEYBINDS</h2>
+<p>Use the arrow keys to navigate. Press o to open a URL. Press space, enter or f to follow the link on the current line. b and p go backward in the history, n and F go forward in the history. r reloads the current page. d creates a bookmark for the current page and D lists all bookmarks. Press ^G twice and then enter to discard the current input.</p>
 <h2 id="configuration">CONFIGURATION</h2>
 <p>Pre-compile time configuration can be done in the <code>config.h</code> file.</p>
 <p><strong>MAXURLLEN</strong><br />
@@ -171,7 +173,12 @@ The maximum length of an URL. 512 by default.<br />
 The maximum length of the site history. 32 by default.</p>
 <h2 id="evironment-variables">EVIRONMENT VARIABLES</h2>
 <p><strong>BROWSER</strong><br />
-The program to use for opening hyperlinks and telnet sessions. If not set, xdg-open will be used.</p>
+The program to use for opening hyperlinks and telnet sessions. If not set, xdg-open will be used.<br />
+<strong>HOME</strong><br />
+The path to the user’s home directory. Used to determine the bookmark file path.</p>
+<h2 id="files">FILES</h2>
+<p><strong>~/.config/nezumi-bookmarks</strong><br />
+This file stores all bookmarks.</p>
 <h2 id="bugs">BUGS</h2>
 <p>To report bugs, see https://github.com/chiyokolinux/nezumi/issues .</p>
 <h2 id="author">AUTHOR</h2>
