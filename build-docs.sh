@@ -17,7 +17,7 @@ buildman() {
 
 buildall cbsh.1 cbsh
 buildall nezumi.1 nezumi
-buildall deppa.1 deppa
+buildall deppa.8 deppa
 
 # fix man pages
 # sed -i 's/.TH "CBSH(1)" "" "" "" ""/.TH "CBSH" "1" "cbsh-1.0" "December 2020" ""/' cbsh/cbsh.1
