@@ -22,6 +22,8 @@ DESCRIPTION
 OPTIONS
 -------
 
+* -v
+  Print version and immediately exit.
 * -h HOSTNAME
   The hostname to listen on. Defaults to the system hostname.
 * -p PORT
