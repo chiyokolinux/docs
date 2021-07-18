@@ -17,7 +17,7 @@ SYNOPSIS
 DESCRIPTION
 -----------
 
-*deppa*, jap. "bucktooth", is a server implementation of the gopher protocol, specified in RFC 1436, written in Go. It can serve gophermaps, directories, plain text, markdown and binary files. Markdown files are converted to gophermaps on-the-fly (very fastly!). It is very lightweight and can handle a lot of traffic on low-end hardware.
+*deppa*, jap. "bucktooth", is a server implementation of the gopher protocol, specified in RFC 1436, written in Go. It can serve gophermaps, directories, plain text, markdown and binary files. Markdown files are converted to gophermaps on-the-fly (very quickly!). It is very lightweight and can handle a lot of traffic on low-end hardware.
 
 OPTIONS
 -------
