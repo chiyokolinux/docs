@@ -37,6 +37,14 @@ Defaults to 1024.
 .IP \[bu] 2
 -disable-gobj When specified, disables execution of .gobj files.
 Defaults to false.
+.IP \[bu] 2
+-gobj-user Specifies the user to run .gobj files as.
+Defaults to nobody.
+Must be an existing user when -disable-gobj is not given.
+.IP \[bu] 2
+-gobj-group Specifies the group to run .gobj files as.
+Defaults to nogroup.
+Must be an existing group when -disable-gobj is not given.
 .SS BUGS
 .PP
 To report bugs, see https://github.com/chiyokolinux/deppa/issues .

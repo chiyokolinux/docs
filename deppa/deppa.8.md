@@ -1,7 +1,7 @@
 ---
 title: DEPPA(8)
 date: July 2021
-footer: deppa-1.0
+footer: deppa-1.1
 ---
 
 NAME
@@ -34,6 +34,10 @@ OPTIONS
   The number of requests after which the garbage collector should trigger. Defaults to 1024.
 * -disable-gobj
   When specified, disables execution of .gobj files. Defaults to false.
+* -gobj-user
+  Specifies the user to run .gobj files as. Defaults to nobody. Must be an existing user when -disable-gobj is not given.
+* -gobj-group
+  Specifies the group to run .gobj files as. Defaults to nogroup. Must be an existing group when -disable-gobj is not given.
 
 BUGS
 ----
